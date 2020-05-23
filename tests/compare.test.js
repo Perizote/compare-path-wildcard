@@ -24,6 +24,10 @@ it('should match ending wildcard by doing substitution', () => {
   expect(compare('/my-path/an-id/', '/my-path/*')).toBeTruthy()
 })
 
+it('should match ending wildcard no matter how many extra parts need to be substituted', () => {
+  expect(compare('/my-path/an-id/a-resource/', '/my-path/*')).toBeTruthy()
+})
+
 it('should match middle wildcard', () => {
   expect(compare('/my-path/an-id/more-path/', '/my-path/*/more-path/')).toBeTruthy()
 })
@@ -61,3 +65,7 @@ it('should not match even having starting wildcard', () => {
 it('should match starting wildcard by doing substitution', () => {
   expect(compare('/my-path/an-id/more-path/', '*/more-path/')).toBeTruthy()
 })
+
+//it('should match multiple wildcards')
+//it('should match recursive wildcards (**)')
+//it("should match compare('/my-path/something-in-between/more-path/','/my-path/something-*-between/more-path/')")
