@@ -13,11 +13,8 @@
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.4",
-    "jest": "24.8.0",
-    "babel-jest": "^24.8.0"
-  },
-  "peerDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "babel-jest": "*"
   },
   "keywords": [],
   "babel": {
