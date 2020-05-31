@@ -2,7 +2,7 @@
   "name": "compare-path-wildcard",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --ci --coverage --config config/jest.config.json",
     "test:watch": "jest --watchAll --config config/jest.config.json"

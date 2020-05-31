@@ -1,6 +1,9 @@
 language: node_js
 node_js:
 - 10
+before_deploy:
+  - rm -rf dist
+  - babel src --out-dir dist
 deploy:
   provider: npm
   email: sergio.perizote@gmail.com
